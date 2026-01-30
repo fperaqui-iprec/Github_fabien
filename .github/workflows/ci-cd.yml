@@ -13,7 +13,7 @@ jobs:
     
     steps:
     - name: Checkout du code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       
     - name: Afficher l'environnement
       run: |
@@ -86,7 +86,7 @@ jobs:
         echo "Les scripts Bash ont été exécutés avec succès dans le pipeline GitHub Actions." >> execution-report.md
         
     - name: Upload du rapport
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: execution-report
         path: execution-report.md
